@@ -9,14 +9,14 @@ import { getAuth } from "firebase/auth";
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
-	apiKey: "AIzaSyD9M4M_0I2LHyHwwBKv5tFiBZarq9lFC3U",
-	authDomain: "sentiment-pharma.firebaseapp.com",
-	databaseURL: "https://sentiment-pharma-default-rtdb.firebaseio.com",
-	projectId: "sentiment-pharma",
-	storageBucket: "sentiment-pharma.firebasestorage.app",
-	messagingSenderId: "449924197230",
-	appId: "1:449924197230:web:e38bfc75f5392472316f7f",
-	measurementId: "G-N9HZMK61T3",
+	apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+	authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+	databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+	projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+	storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+	messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+	appId: import.meta.env.VITE_FIREBASE_APP_ID,
+	measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 // Enabled by default. Set VITE_ENABLE_FIREBASE=false to disable initialization.
