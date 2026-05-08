@@ -5,7 +5,7 @@ import {
 	persistentLocalCache,
 	persistentMultipleTabManager,
 } from "firebase/firestore";
-import { getAuth } from "firebase/auth";
+import { getAuth, signInAnonymously } from "firebase/auth";
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
@@ -43,6 +43,13 @@ if (FIREBASE_ENABLED) {
 
 		auth = getAuth(app);
 		database = getDatabase(app);
+
+		// Many Firestore rules require an authenticated user. Anonymous auth
+		// lets reads work without a visible login flow.
+		signInAnonymously(auth).catch((authError) => {
+			console.warn("Anonymous Firebase auth failed:", authError);
+		});
+
 		console.log("Firebase initialized successfully");
 	} catch (error) {
 		console.error("Firebase initialization error:", error);
