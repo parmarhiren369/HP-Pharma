@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { useToast } from "@/hooks/use-toast";
 import { db } from "@/lib/firebase";
-import { collection, deleteDoc, doc, getDocs, orderBy, query, addDoc, Timestamp } from "firebase/firestore";
+import { collection, deleteDoc, doc, getDocs, orderBy, query, addDoc, Timestamp } from "@/lib/firestore-shim";
 import { Calendar, DollarSign, FileText, Filter, Plus, RefreshCw, Search, Trash2, FileCheck, Printer } from "lucide-react";
 
 interface QuotationRecord {

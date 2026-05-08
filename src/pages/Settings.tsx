@@ -10,7 +10,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { db } from "@/lib/firebase";
-import { collection, getDocs, deleteDoc, doc, addDoc, Timestamp, writeBatch } from "firebase/firestore";
+import { collection, getDocs, deleteDoc, doc, addDoc, Timestamp, writeBatch } from "@/lib/firestore-shim";
 import {
   AlertDialog,
   AlertDialogAction,

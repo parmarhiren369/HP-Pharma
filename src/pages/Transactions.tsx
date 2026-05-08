@@ -22,7 +22,7 @@ import {
   query,
   Timestamp,
   updateDoc,
-} from "firebase/firestore";
+} from "@/lib/firestore-shim";
 import { 
   BookOpen, 
   Calendar,

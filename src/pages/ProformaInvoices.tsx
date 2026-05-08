@@ -24,7 +24,7 @@ import {
   query,
   Timestamp,
   updateDoc,
-} from "firebase/firestore";
+} from "@/lib/firestore-shim";
 import { FileText, IndianRupee, Pencil, Plus, Printer, RefreshCw, Trash2, FileCheck } from "lucide-react";
 
 type ProformaInvoiceStatus = "Approved" | "In Process" | "Paid" | "Pending" | "Overdue";

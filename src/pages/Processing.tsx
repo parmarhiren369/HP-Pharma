@@ -22,7 +22,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { AutocompleteInput } from "@/components/ui/autocomplete-input";
 import { db } from "@/lib/firebase";
-import { collection, addDoc, getDocs, Timestamp, query, orderBy, limit, updateDoc, doc, setDoc, deleteDoc, where } from "firebase/firestore";
+import { collection, addDoc, getDocs, Timestamp, query, orderBy, limit, updateDoc, doc, setDoc, deleteDoc, where } from "@/lib/firestore-shim";
 import { useToast } from "@/hooks/use-toast";
 
 interface RawMaterial {

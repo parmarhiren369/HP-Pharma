@@ -15,7 +15,7 @@ import {
   orderBy,
   query,
   Timestamp,
-} from "firebase/firestore";
+} from "@/lib/firestore-shim";
 import { saveAs } from "file-saver";
 import { ArrowLeftRight, FileDown, FileText, Landmark, RefreshCw } from "lucide-react";
 

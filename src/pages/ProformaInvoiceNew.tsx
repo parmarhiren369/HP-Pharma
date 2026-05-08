@@ -12,7 +12,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { db } from "@/lib/firebase";
-import { addDoc, collection, getDocs, Timestamp } from "firebase/firestore";
+import { addDoc, collection, getDocs, Timestamp } from "@/lib/firestore-shim";
 import { ArrowLeft, Check, ChevronsUpDown, FileText, Plus, Trash2 } from "lucide-react";
 
 type ProformaInvoiceStatus = "Approved" | "In Process";

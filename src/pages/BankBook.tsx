@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { useToast } from "@/hooks/use-toast";
 import { db } from "@/lib/firebase";
-import { collection, getDocs, orderBy, query } from "firebase/firestore";
+import { collection, getDocs, orderBy, query } from "@/lib/firestore-shim";
 import { ArrowLeft, Download, RefreshCw, Search } from "lucide-react";
 import jsPDF from "jspdf";
 import "jspdf-autotable";

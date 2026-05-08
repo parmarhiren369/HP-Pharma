@@ -25,7 +25,7 @@ import {
   runTransaction,
   Timestamp,
   updateDoc,
-} from "firebase/firestore";
+} from "@/lib/firestore-shim";
 import { FileText, IndianRupee, Pencil, Plus, Printer, RefreshCw, Trash2 } from "lucide-react";
 
 type InvoiceStatus = "Approved" | "In Process" | "Paid" | "Pending" | "Overdue";

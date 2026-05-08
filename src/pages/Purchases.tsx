@@ -23,7 +23,7 @@ import {
   Timestamp,
   updateDoc,
   where,
-} from "firebase/firestore";
+} from "@/lib/firestore-shim";
 import { IndianRupee, Plus, RefreshCw, ShoppingCart, Truck, PackageSearch } from "lucide-react";
 
 interface SupplierOption {

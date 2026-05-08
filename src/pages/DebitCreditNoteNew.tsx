@@ -9,7 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { db } from "@/lib/firebase";
-import { collection, doc, getDocs, Timestamp, writeBatch } from "firebase/firestore";
+import { collection, doc, getDocs, Timestamp, writeBatch } from "@/lib/firestore-shim";
 import { ArrowLeft, FilePlus } from "lucide-react";
 
 type NoteType = "Debit" | "Credit";

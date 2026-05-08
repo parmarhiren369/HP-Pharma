@@ -23,7 +23,7 @@ import {
   query,
   Timestamp,
   updateDoc,
-} from "firebase/firestore";
+} from "@/lib/firestore-shim";
 import { FileMinus, FilePlus, Pencil, Plus, RefreshCw, Trash2 } from "lucide-react";
 
 type NoteType = "Debit" | "Credit";

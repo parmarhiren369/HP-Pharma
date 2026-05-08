@@ -22,7 +22,7 @@ import {
   query,
   Timestamp,
   writeBatch,
-} from "firebase/firestore";
+} from "@/lib/firestore-shim";
 import {
   ChevronDown,
   ChevronRight,
