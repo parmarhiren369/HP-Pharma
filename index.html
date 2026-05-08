@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haritany pharma</title>
+    <meta name="description" content="Haritany pharma management software" />
+    <meta name="author" content="Haritany pharma" />
+
+    <meta property="og:title" content="Haritany pharma" />
+    <meta property="og:description" content="Haritany pharma management software" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <style>
+      /* Fallback styles in case CSS fails to load */
+      html, body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        background: #0a0a0a;
+        color: #ffffff;
+      }
+      #root {
+        min-height: 100vh;
+      }
+      .loading-fallback {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #0a0a0a;
+        color: #ffffff;
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root">
+      <div class="loading-fallback">
+        <p>Loading application...</p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
